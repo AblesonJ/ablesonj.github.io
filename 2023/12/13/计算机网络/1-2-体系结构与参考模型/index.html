@@ -254,7 +254,119 @@
     
     
     
-<meta name="generator" content="Hexo 7.0.0"></head>
+<meta name="generator" content="Hexo 7.0.0"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head>
 
 
 <body>
@@ -641,12 +753,7 @@
 <p>服务的本质是下一层中可以被上一层使用的功能，只有能被上层看到的功能才叫服务；</p>
 <p>上一层可以利用下一层的四种功能，也就是四类服务原语；</p>
 </blockquote>
-<img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/2023/12/13/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/1-2-%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E4%B8%8E%E5%8F%82%E8%80%83%E6%A8%A1%E5%9E%8B/1702473549035.png"
-                      class="" width="1702473549035"
-                >
+<img lazyload="" src="/images/loading.svg" data-src="/2023/12/13/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/1-2-%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E4%B8%8E%E5%8F%82%E8%80%83%E6%A8%A1%E5%9E%8B/1702473549035.png" class="" width="1702473549035">
 
 <h3 id="计算机网络提供的服务"><a href="#计算机网络提供的服务" class="headerlink" title="计算机网络提供的服务"></a>计算机网络提供的服务</h3><ul>
 <li><p>面向连接服务与无连接服务</p>
@@ -678,43 +785,23 @@
 <blockquote>
 <p>上一层的 PDU 作为下一层的 SDU；</p>
 </blockquote>
-<img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/2023/12/13/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/1-2-%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E4%B8%8E%E5%8F%82%E8%80%83%E6%A8%A1%E5%9E%8B/image-20230116193221-3mn6lp5.png"
-                      class="" title="image"
-                >
+<img lazyload="" src="/images/loading.svg" data-src="/2023/12/13/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/1-2-%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E4%B8%8E%E5%8F%82%E8%80%83%E6%A8%A1%E5%9E%8B/image-20230116193221-3mn6lp5.png" class="" title="image">
 
 <blockquote>
 <p>最大传输单元MTU</p>
 <p>MTU是指上层传输给本层的最大的数据的最大长度，是本层数据部分SDU的最大长度，而不是本层PDU的最大长度；</p>
 </blockquote>
-<h1 id="分层结构的参考模型"><a href="#分层结构的参考模型" class="headerlink" title="分层结构的参考模型"></a>分层结构的参考模型</h1><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/2023/12/13/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/1-2-%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E4%B8%8E%E5%8F%82%E8%80%83%E6%A8%A1%E5%9E%8B/Image00084-20231202174705-grv0jhk.jpg"
-                      class="" title="Image00084"
-                >
+<h1 id="分层结构的参考模型"><a href="#分层结构的参考模型" class="headerlink" title="分层结构的参考模型"></a>分层结构的参考模型</h1><img lazyload="" src="/images/loading.svg" data-src="/2023/12/13/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/1-2-%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E4%B8%8E%E5%8F%82%E8%80%83%E6%A8%A1%E5%9E%8B/Image00084-20231202174705-grv0jhk.jpg" class="" title="Image00084">
 
-<img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/2023/12/13/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/1-2-%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E4%B8%8E%E5%8F%82%E8%80%83%E6%A8%A1%E5%9E%8B/Image00086-20231202204324-8focext.jpg"
-                      class="" title="Image00086"
-                >
+<img lazyload="" src="/images/loading.svg" data-src="/2023/12/13/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/1-2-%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E4%B8%8E%E5%8F%82%E8%80%83%E6%A8%A1%E5%9E%8B/Image00086-20231202204324-8focext.jpg" class="" title="Image00086">
 
 <p>上两层端到端通信，看不到底层传输的细节，数据直接从起点到终点，下三层是点到点传输，每一次只关心数据下一步向哪里走；</p>
-<h2 id="各个层的功能"><a href="#各个层的功能" class="headerlink" title="各个层的功能"></a>各个层的功能</h2><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/2023/12/13/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/1-2-%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E4%B8%8E%E5%8F%82%E8%80%83%E6%A8%A1%E5%9E%8B/Image00097-20231206111324-s61uxr9.jpg"
-                      class=""
-                >
+<h2 id="各个层的功能"><a href="#各个层的功能" class="headerlink" title="各个层的功能"></a>各个层的功能</h2><img lazyload="" src="/images/loading.svg" data-src="/2023/12/13/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/1-2-%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E4%B8%8E%E5%8F%82%E8%80%83%E6%A8%A1%E5%9E%8B/Image00097-20231206111324-s61uxr9.jpg" class="">
 
 <table>
 <thead>
 <tr>
-<th>TCP&#x2F;IP层级</th>
+<th>TCP/IP层级</th>
 <th>OSI层级</th>
 <th>协议</th>
 <th>数据单元</th>
@@ -760,7 +847,7 @@
 <td>网际层</td>
 <td>网络层</td>
 <td>IP、IPX、ICMP、IGMP、ARP、RARP 和 OSPF</td>
-<td>IP数据报&#x2F;分组</td>
+<td>IP数据报/分组</td>
 <td>路由选择；流量控制、拥塞控制、差错控制等；</td>
 </tr>
 <tr>
@@ -768,12 +855,12 @@
 <td>数据链路层</td>
 <td>SDLC、HDLC、PPP、STP、帧中继等</td>
 <td>帧</td>
-<td>透明传输；封装成帧；差错控制、流量控制、传输管理等；<br />实现网络内部主机之间的通信；</td>
+<td>透明传输；封装成帧；差错控制、流量控制、传输管理等；<br>实现网络内部主机之间的通信；</td>
 </tr>
 <tr>
 <td></td>
 <td>物理层</td>
-<td>EIA-232C、EIA&#x2F;TIA RS-449、CCITT 的 X.21</td>
+<td>EIA-232C、EIA/TIA RS-449、CCITT 的 X.21</td>
 <td>比特</td>
 <td>定义了数据终端设备 DTE 和数据通信设备 DCE 的物理与逻辑连接方法；</td>
 </tr>
@@ -785,17 +872,17 @@
 </ul>
 </blockquote>
 <blockquote>
-<p>OSI模型和TCP&#x2F;IP模型的区别</p>
+<p>OSI模型和TCP/IP模型的区别</p>
 <ul>
 <li><p>传输层和网络层的功能划分不同</p>
 <ul>
 <li>OSI模型规定网络层实现无连接和面向连接的服务，传输层只实现面向连接的服务；</li>
-<li>TCP&#x2F;IP协议中，网络层的IP 协议是无连接的，因此网际层提供的是无连接的服务，TCP 和 UDP 共同在传输层提供了面向连接和无连接的服务；</li>
+<li>TCP/IP协议中，网络层的IP 协议是无连接的，因此网际层提供的是无连接的服务，TCP 和 UDP 共同在传输层提供了面向连接和无连接的服务；</li>
 </ul>
 </li>
-<li><p>OSI模型中会话层和表示层设置较为繁琐，在TCP&#x2F;IP模型实现中，直接融合到了应用层中；</p>
+<li><p>OSI模型中会话层和表示层设置较为繁琐，在TCP/IP模型实现中，直接融合到了应用层中；</p>
 </li>
-<li><p>TCP&#x2F;IP模型没有具体的数据链路层和物理层的划分，只有网路接口层；</p>
+<li><p>TCP/IP模型没有具体的数据链路层和物理层的划分，只有网路接口层；</p>
 </li>
 </ul>
 </blockquote>
@@ -803,8 +890,8 @@
 <thead>
 <tr>
 <th></th>
-<th>ISO&#x2F;OSI 参考模型</th>
-<th>TCP&#x2F;IP 模型</th>
+<th>ISO/OSI 参考模型</th>
+<th>TCP/IP 模型</th>
 </tr>
 </thead>
 <tbody><tr>

@@ -13,26 +13,18 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="http://ablesonj.github.com/2023/12/14/计算机网络/2-1-数据的编码与调制/"/>
+    <link rel="canonical" href="http://ablesonj.github.com/archives/2023/page/2/"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
     
-        <meta name="description" content="数据通信的基本概念通信的目的是传送消息；物理层传递信息的单位是比特； 相关术语 数据：传送信息的实体，通常是有意义的符号序列；  信号：数据的电气或电磁表现，是数据传输过程中的存在形式；  信源：产生和发送数据的源头；  信宿：接收数据的终点；  信道：信号传输的媒介；一条通信线路往往包含一条发送信道和一条接收信道；  根据传输信号不同分为：模拟信道、数字信道； 根据传输介质不同分为：无线信道、有">
-<meta property="og:type" content="article">
-<meta property="og:title" content="2.1 数据的编码与调制">
-<meta property="og:url" content="http://ablesonj.github.com/2023/12/14/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/2-1-%E6%95%B0%E6%8D%AE%E7%9A%84%E7%BC%96%E7%A0%81%E4%B8%8E%E8%B0%83%E5%88%B6/index.html">
+        <meta property="og:type" content="website">
+<meta property="og:title">
+<meta property="og:url" content="http://ablesonj.github.com/archives/2023/page/2/index.html">
 <meta property="og:site_name">
-<meta property="og:description" content="数据通信的基本概念通信的目的是传送消息；物理层传递信息的单位是比特； 相关术语 数据：传送信息的实体，通常是有意义的符号序列；  信号：数据的电气或电磁表现，是数据传输过程中的存在形式；  信源：产生和发送数据的源头；  信宿：接收数据的终点；  信道：信号传输的媒介；一条通信线路往往包含一条发送信道和一条接收信道；  根据传输信号不同分为：模拟信道、数字信道； 根据传输介质不同分为：无线信道、有">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://ablesonj.github.com/2023/12/14/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/2-1-%E6%95%B0%E6%8D%AE%E7%9A%84%E7%BC%96%E7%A0%81%E4%B8%8E%E8%B0%83%E5%88%B6/1702529086619.png">
-<meta property="og:image" content="http://ablesonj.github.com/2023/12/14/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/2-1-%E6%95%B0%E6%8D%AE%E7%9A%84%E7%BC%96%E7%A0%81%E4%B8%8E%E8%B0%83%E5%88%B6/Image00002-20231202170027-ftjxwk1.jpg">
-<meta property="og:image" content="http://ablesonj.github.com/2023/12/14/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/2-1-%E6%95%B0%E6%8D%AE%E7%9A%84%E7%BC%96%E7%A0%81%E4%B8%8E%E8%B0%83%E5%88%B6/Image00005-20231202170154-irvs93p.jpg">
-<meta property="article:published_time" content="2023-12-14T04:44:23.000Z">
-<meta property="article:modified_time" content="2023-12-14T06:09:51.046Z">
 <meta property="article:author" content="Ableson">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://ablesonj.github.com/2023/12/14/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/2-1-%E6%95%B0%E6%8D%AE%E7%9A%84%E7%BC%96%E7%A0%81%E4%B8%8E%E8%B0%83%E5%88%B6/1702529086619.png">
     
     
     <!--- Icon Part-->
@@ -44,7 +36,7 @@
     
     <title>
         
-            2.1 数据的编码与调制 -
+            归档: 2023 -
         
         Ableson&#39;s Blog
     </title>
@@ -444,7 +436,7 @@ mjx-container[display="true"] + br {
 
                             <li class="navbar-item">
                                 <!-- Menu -->
-                                <a class=""
+                                <a class="active"
                                    href="/archives/"
                                         >
                                     <i class="fa-regular fa-archive fa-fw"></i>
@@ -559,7 +551,7 @@ mjx-container[display="true"] + br {
 
                     <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
                         
-                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full active"
                            href="/archives/"
                         >
                             <span>
@@ -646,310 +638,119 @@ mjx-container[display="true"] + br {
             <div class="main-content">
 
                 
-                    <div class="post-page-container flex relative justify-between box-border w-full h-full">
-    <div class="article-content-container">
+                    <div class="archive-container shadow-none hover:shadow-none sm:shadow-redefine sm:hover:shadow-redefine-hover">
+    
 
-        <div class="article-title relative w-full">
-            
-                <div class="w-full flex items-center pt-6 justify-start">
-                    <h1 class="article-title-regular text-second-text-color text-4xl md:text-6xl font-bold px-2 sm:px-6 md:px-8 py-3">2.1 数据的编码与调制</h1>
-                </div>
-            
+<div class="archive-list-container">
+    
+        <section class="archive-item">
+            <div class="archive-item-header flex flex-row items-center mb-2">
+                <span class="archive-year font-semibold text-3xl mr-2">2023</span>
+                <span class="archive-year-post-count text-xs md:text-sm font-bold rounded-small bg-third-background-color py-[2px] px-[10px] border border-border-color">11</span>
             </div>
-
-        
-            <div class="article-header flex flex-row gap-2 items-center px-2 sm:px-6 md:px-8">
-                <div class="avatar w-[46px] h-[46px] flex-shrink-0 rounded-medium border border-border-color p-[1px]">
-                    <img src="/image/avatar.jpg">
-                </div>
-                <div class="info flex flex-col justify-between">
-                    <div class="author flex items-center">
-                        <span class="name text-default-text-color text-lg font-semibold">Ableson</span>
-                        
-                            <span class="author-label ml-1.5 text-xs px-2 py-0.5 rounded-small text-third-text-color border border-shadow-color-1">Lv2</span>
-                        
-                    </div>
-                    <div class="meta-info">
-                        <div class="article-meta-info">
-    <span class="article-date article-meta-item">
-        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
-        <span class="desktop">2023-12-14 12:44:23</span>
-        <span class="mobile">2023-12-14 12:44:23</span>
-        <span class="hover-info">创建</span>
-    </span>
-    
-        <span class="article-date article-meta-item">
-            <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2023-12-14 14:09:51</span>
-            <span class="mobile">2023-12-14 14:09:51</span>
-            <span class="hover-info">更新</span>
-        </span>
-    
-
-    
-        <span class="article-categories article-meta-item">
-            <i class="fa-regular fa-folders"></i>&nbsp;
-            <ul>
-                
+            <ul class="article-list pl-8 text-lg leading-[1.5]">
+              
                 
                     
-                        
-                        <li>
-                            <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">计算机网络</a>&nbsp;
-                        </li>
-                    
-                    
+                    <li class="article-item" date-is='12-19'>
                 
+                
+                    <a href="/2023/12/19/%E5%8F%A4%E8%AF%97%E8%AF%8D%E7%A7%AF%E7%B4%AF/%E9%A2%98%E9%83%BD%E5%9F%8E%E5%8D%97%E5%BA%84/" class="block overflow-hidden">
+                        <span class="article-title mb-0.5 text-2xl">题都城南庄</span>
+                    </a>
+                
+              
+                
+                    
+                    <li class="article-item" date-is='12-17'>
+                
+                
+                    <a href="/2023/12/17/%E5%8F%A4%E8%AF%97%E8%AF%8D%E7%A7%AF%E7%B4%AF/%E9%80%A2%E9%9B%AA%E5%AE%BF%E8%8A%99%E8%93%89%E5%B1%B1%E4%B8%BB%E4%BA%BA/" class="block overflow-hidden">
+                        <span class="article-title mb-0.5 text-2xl">逢雪宿芙蓉山主人</span>
+                    </a>
+                
+              
+                
+                    
+                    <li class="article-item" date-is='12-16'>
+                
+                
+                    <a href="/2023/12/16/%E5%8F%A4%E8%AF%97%E8%AF%8D%E7%A7%AF%E7%B4%AF/%E6%B8%85%E5%B9%B3%E8%B0%83%E4%B8%89%E9%A6%96/" class="block overflow-hidden">
+                        <span class="article-title mb-0.5 text-2xl">清平调三首</span>
+                    </a>
+                
+              
+                
+                
+                    <a href="/2023/12/16/%E5%8F%A4%E8%AF%97%E8%AF%8D%E7%A7%AF%E7%B4%AF/%E6%B8%A1%E8%8D%86%E9%97%A8%E9%80%81%E5%88%AB/" class="block overflow-hidden">
+                        <span class="article-title mb-0.5 text-2xl">渡荆门送别</span>
+                    </a>
+                
+              
+                
+                
+                    <a href="/2023/12/16/%E5%8F%A4%E8%AF%97%E8%AF%8D%E7%A7%AF%E7%B4%AF/%E9%97%AE%E5%88%98%E5%8D%81%E4%B9%9D/" class="block overflow-hidden">
+                        <span class="article-title mb-0.5 text-2xl">问刘十九</span>
+                    </a>
+                
+              
+                
+                    
+                    <li class="article-item" date-is='12-14'>
+                
+                
+                    <a href="/2023/12/14/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/2.2%20%E5%A5%88%E6%B0%8F%E5%87%86%E5%88%99%E4%B8%8E%E9%A6%99%E5%86%9C%E5%AE%9A%E7%90%86/" class="block overflow-hidden">
+                        <span class="article-title mb-0.5 text-2xl">2.2 奈氏准则与香农定理</span>
+                    </a>
+                
+              
+                
+                
+                    <a href="/2023/12/14/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/2-1-%E6%95%B0%E6%8D%AE%E7%9A%84%E7%BC%96%E7%A0%81%E4%B8%8E%E8%B0%83%E5%88%B6/" class="block overflow-hidden">
+                        <span class="article-title mb-0.5 text-2xl">2.1 数据的编码与调制</span>
+                    </a>
+                
+              
+                
+                    
+                    <li class="article-item" date-is='12-13'>
+                
+                
+                    <a href="/2023/12/13/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/1-2-%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E4%B8%8E%E5%8F%82%E8%80%83%E6%A8%A1%E5%9E%8B/" class="block overflow-hidden">
+                        <span class="article-title mb-0.5 text-2xl">1.2 体系结构与参考模型</span>
+                    </a>
+                
+              
+                
+                
+                    <a href="/2023/12/13/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/1-1-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E6%A6%82%E8%BF%B0/" class="block overflow-hidden">
+                        <span class="article-title mb-0.5 text-2xl">1.1 计算机网络概述</span>
+                    </a>
+                
+              
+                
+                
+                    <a href="/2023/12/13/%E5%8F%A4%E8%AF%97%E8%AF%8D%E7%A7%AF%E7%B4%AF/%E8%9D%B6%E6%81%8B%E8%8A%B1%C2%B7%E6%98%A5%E6%99%AF/" class="block overflow-hidden">
+                        <span class="article-title mb-0.5 text-2xl">蝶恋花·春景</span>
+                    </a>
+                
+              
+                
+                    
+                    <li class="article-item" date-is='12-12'>
+                
+                
+                    <a href="/2023/12/12/%E5%8F%A4%E8%AF%97%E8%AF%8D%E7%A7%AF%E7%B4%AF/%E5%8F%A4%E8%AF%97%E8%AF%8D%E7%A7%AF%E7%B4%AF%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/" class="block overflow-hidden">
+                        <span class="article-title mb-0.5 text-2xl">参考文章</span>
+                    </a>
+                
+              
             </ul>
-        </span>
-    
-    
-
-    
-    
-    
-    
-        <span class="article-pv article-meta-item">
-            <i class="fa-regular fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
-        </span>
+        </section>
     
 </div>
 
-                    </div>
-                </div>
-            </div>
-        
-
-        
-
-
-        <div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
-            <h1 id="数据通信的基本概念"><a href="#数据通信的基本概念" class="headerlink" title="数据通信的基本概念"></a>数据通信的基本概念</h1><p>通信的目的是传送消息；物理层传递信息的单位是比特；</p>
-<h4 id="相关术语"><a href="#相关术语" class="headerlink" title="相关术语"></a>相关术语</h4><ul>
-<li><p>数据：传送信息的实体，通常是有意义的符号序列；</p>
-</li>
-<li><p>信号：数据的电气或电磁表现，是数据传输过程中的存在形式；</p>
-</li>
-<li><p>信源：产生和发送数据的源头；</p>
-</li>
-<li><p>信宿：接收数据的终点；</p>
-</li>
-<li><p>信道：信号传输的媒介；一条通信线路往往包含一条发送信道和一条接收信道；</p>
-<ul>
-<li>根据传输信号不同分为：模拟信道、数字信道；</li>
-<li>根据传输介质不同分为：无线信道、有线信道；</li>
-</ul>
-</li>
-</ul>
-<img lazyload="" src="/images/loading.svg" data-src="/2023/12/14/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/2-1-%E6%95%B0%E6%8D%AE%E7%9A%84%E7%BC%96%E7%A0%81%E4%B8%8E%E8%B0%83%E5%88%B6/1702529086619.png" class="" width="1702529086619">
-
-<h4 id="通信方式"><a href="#通信方式" class="headerlink" title="通信方式"></a>通信方式</h4><p>通信方式：单工（只能单向传输）、全双工（能够同时双向传输）、半双工（能够双向传输，但是只能轮流，不能同时）；</p>
-<p>传输方式：串行传输、并行传输；</p>
-<p>同步方式：同步传输、异步传输；</p>
-<blockquote>
-<p>半双工传输可以只有一条传输介质，通信双方分时复用，但是存在两条信道；</p>
-<p>同步传输和异步传输的区别在于是否需要额外的同步信号；</p>
-</blockquote>
-<h4 id="码元与速率"><a href="#码元与速率" class="headerlink" title="码元与速率"></a>码元与速率</h4><ul>
-<li><p>码元：是指固定时长的信号波形，是数制的单位，例如二进制码元有两个，用一位二进制数表示，四进制码元有四个，需要两位二进制数表示；十进制码元有十个，需要四位二进制数表示；</p>
-</li>
-<li><p>速率：也叫数据率，是指数据的传输速率，表示单位时间内传输的数据量；可以用码元传输速率和信息传输速率表示；</p>
-<ul>
-<li>码元传输速率/波特率：表示单位时间内数字通信系统传输的码元个数；</li>
-<li>信息传输速率/比特率：表示单位时间内数字通信系统传输的二进制位数，单位是 b/s</li>
-</ul>
-</li>
-<li><p>带宽：原指信号的频带宽度，即最高频率与最低频率之差，计算机网络中的带宽指两点之间传输数据的最高速率，单位是 b/s、Mb/s；</p>
-</li>
-</ul>
-<h1 id="编码与调制"><a href="#编码与调制" class="headerlink" title="编码与调制"></a>编码与调制</h1><h4 id="基带信号与宽带信号"><a href="#基带信号与宽带信号" class="headerlink" title="基带信号与宽带信号"></a>基带信号与宽带信号</h4><ul>
-<li>基带信号：将数字 1 和 0 直接使用两种不同的电压表示，并放在数字信道上传输（基带传输）；来自信源，基带信号直接表达了要传输的信息；适用近距离传输；</li>
-<li>宽带信号：将基带信号进行调制后形成的频分复用模拟信号，再传送到模拟信道上去传输（宽带传输）；经过载波调制，把信号的频率范围搬移到较高的频段以便在信道中传输；适用远距离传输；</li>
-</ul>
-<p>将数据转换成数字信号，就是编码；将数据转换成模拟信号，就是调制；调制是将低能量的，易受干扰的信号，附加到高能量的，易于传播的、不易受干扰的载波信号上；</p>
-<pre class="mermaid">graph LR
-数据 --&gt; 数字数据 &amp; 模拟数据
-数字数据 --&gt;数字发送器--&gt;数字信号
-数字数据 --&gt;调制器--&gt;模拟信号
-模拟数据 --&gt;PCM编码器--&gt;数字信号
-模拟数据 --&gt;放大器调制器--&gt;模拟信号
-数字信号 &amp; 模拟信号--&gt;信号</pre>
-
-<h2 id="数字数据的编码与调制"><a href="#数字数据的编码与调制" class="headerlink" title="数字数据的编码与调制"></a>数字数据的编码与调制</h2><h3 id="数字数据编码为数字信号"><a href="#数字数据编码为数字信号" class="headerlink" title="数字数据编码为数字信号"></a>数字数据编码为数字信号</h3><ul>
-<li><p>不归零编码：高电平表示 1，低电平表示 0，不具有检错纠错的功能，传输一个二进制位需要一个时钟周期；</p>
-</li>
-<li><p>归零编码：信号电平在一个码元之内（码元的中间位置）要恢复到 0，传输一个二进制位需要两个时钟周期；</p>
-<ul>
-<li>图中展示的是双极性归零编码，还有单极性归零编码，发送 0 时整个码元都是低电平；</li>
-</ul>
-</li>
-<li><p>反向不归零编码：使用信号边沿表示数据，电平反转表示 0，电平不变表示 1；</p>
-<ul>
-<li>假如一直发送 1，接收端无法分割码元，因此需要额外的时钟信号；</li>
-</ul>
-</li>
-<li><p>4b/5b 编码：比特流中插入额外的 bit，以打破一连串的 0 或者 1，使用 5bit 编码表示 4bit 的数据，之后再传给接收方，编码效率为 80%；</p>
-</li>
-<li><p>曼彻斯特编码：电平信号在码元的中间翻转，码元有两位，例如规定 10 表示 1，01 表示 0，也可以反过来；</p>
-</li>
-<li><p>差分曼彻斯特编码：电平信号在码元的中间翻转，码元有两位，第一位与之前的位相同表示 1，码元与前一位相反表示 0；</p>
-</li>
-</ul>
-<img lazyload="" src="/images/loading.svg" data-src="/2023/12/14/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/2-1-%E6%95%B0%E6%8D%AE%E7%9A%84%E7%BC%96%E7%A0%81%E4%B8%8E%E8%B0%83%E5%88%B6/Image00002-20231202170027-ftjxwk1.jpg" class="" title="Image00002">
-
-<h3 id="数字数据调制为模拟信号"><a href="#数字数据调制为模拟信号" class="headerlink" title="数字数据调制为模拟信号"></a>数字数据调制为模拟信号</h3><ul>
-<li>ASK 调幅：通过改变载波信号的振幅来表示数字 1 和数字 0，1 的时候有振幅，0 的时候没有振幅；抗干扰能力差；</li>
-<li>FSK 调频：0 的时候低频信号，1 的时候高频信号；</li>
-<li>PSK 调相：1 信号对应一种相位波形（如正弦），0 信号对应另一种相位波形（如余弦）；</li>
-<li>QAM：调幅 + 调相；设波特率为 B，采用 m 个相位，n 种振幅，则码元有 $m<em>n个<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.452ex;" xmlns="http://www.w3.org/2000/svg" width="31.674ex" height="2.149ex" role="img" focusable="false" viewBox="0 -750 14000 950"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><text data-variant="italic" transform="scale(1,-1)" font-size="884px" font-family="serif" font-style="italic">，</text></g><g data-mml-node="mi" transform="translate(1000,0)"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">一</text></g><g data-mml-node="mi" transform="translate(2000,0)"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">个</text></g><g data-mml-node="mi" transform="translate(3000,0)"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">码</text></g><g data-mml-node="mi" transform="translate(4000,0)"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">元</text></g><g data-mml-node="mi" transform="translate(5000,0)"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">需</text></g><g data-mml-node="mi" transform="translate(6000,0)"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">要</text></g><g data-mml-node="mi" transform="translate(7000,0)"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">的</text></g><g data-mml-node="mi" transform="translate(8000,0)"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">二</text></g><g data-mml-node="mi" transform="translate(9000,0)"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">进</text></g><g data-mml-node="mi" transform="translate(10000,0)"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">制</text></g><g data-mml-node="mi" transform="translate(11000,0)"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">位</text></g><g data-mml-node="mi" transform="translate(12000,0)"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">数</text></g><g data-mml-node="mi" transform="translate(13000,0)"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">为</text></g></g></g></svg></mjx-container>log_2(m</em>n)<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.452ex;" xmlns="http://www.w3.org/2000/svg" width="20.362ex" height="2.149ex" role="img" focusable="false" viewBox="0 -750 9000 950"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><text data-variant="italic" transform="scale(1,-1)" font-size="884px" font-family="serif" font-style="italic">，</text></g><g data-mml-node="mi" transform="translate(1000,0)"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">因</text></g><g data-mml-node="mi" transform="translate(2000,0)"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">此</text></g><g data-mml-node="mi" transform="translate(3000,0)"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">数</text></g><g data-mml-node="mi" transform="translate(4000,0)"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">据</text></g><g data-mml-node="mi" transform="translate(5000,0)"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">传</text></g><g data-mml-node="mi" transform="translate(6000,0)"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">输</text></g><g data-mml-node="mi" transform="translate(7000,0)"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">速</text></g><g data-mml-node="mi" transform="translate(8000,0)"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">率</text></g></g></g></svg></mjx-container>R=Blog_2(m*n)$；</li>
-</ul>
-<img lazyload="" src="/images/loading.svg" data-src="/2023/12/14/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/2-1-%E6%95%B0%E6%8D%AE%E7%9A%84%E7%BC%96%E7%A0%81%E4%B8%8E%E8%B0%83%E5%88%B6/Image00005-20231202170154-irvs93p.jpg" class="" title="Image00005">
-
-<h2 id="模拟信号的编码与调制"><a href="#模拟信号的编码与调制" class="headerlink" title="模拟信号的编码与调制"></a>模拟信号的编码与调制</h2><p>对模拟音频信号通过采样，量化转化成有限个数字表示的离散序列，最典型的例子是对音频信号进行编码的买码调制 PCM，在计算机的应用中能够达到最高的保真水平；它主要包括三个步骤：抽样、量化、编码；</p>
-<ul>
-<li>抽样：对模拟信号进行周期性扫描，把时间上连续的信号变成时间上离散的信号；采样定理：采样频率大于等于二倍的信号的最高频率；</li>
-<li>量化：把抽样取得的电平幅值按照一定的分级标度转化为对应的数字值，并取整数；</li>
-<li>编码：把量化的结果转换为与之对应的二进制编码；</li>
-</ul>
-<p>模拟数据调制为模拟信号：可以使用频分复用技术，充分利用带宽资源，使用载波携带模拟数据；</p>
-
-        </div>
-
-        
-            <div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
-                <div class="article-copyright-info-container">
-    <ul>
-        <li><strong>标题:</strong> 2.1 数据的编码与调制</li>
-        <li><strong>作者:</strong> Ableson</li>
-        <li><strong>创建于
-                :</strong> 2023-12-14 12:44:23</li>
-        
-            <li>
-                <strong>更新于
-                    :</strong> 2023-12-14 14:09:51
-            </li>
-        
-        <li>
-            <strong>链接:</strong> https://github.com/AblesonJ/2023/12/14/计算机网络/2-1-数据的编码与调制/
-        </li>
-        <li>
-            <strong>
-                版权声明:
-            </strong>
-            
-
-            
-                本文章采用 <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0">CC BY-NC-SA 4.0</a> 进行许可。
-            
-        </li>
-    </ul>
 </div>
-
-            </div>
-        
-
-        
-
-        
-
-        
-            <div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
-                
-                    <div class="article-prev border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
-                        <a class="prev"
-                        rel="prev"
-                        href="/2023/12/14/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/2.2%20%E5%A5%88%E6%B0%8F%E5%87%86%E5%88%99%E4%B8%8E%E9%A6%99%E5%86%9C%E5%AE%9A%E7%90%86/"
-                        >
-                            <span class="left arrow-icon flex justify-center items-center">
-                                <i class="fa-solid fa-chevron-left"></i>
-                            </span>
-                            <span class="title flex justify-center items-center">
-                                <span class="post-nav-title-item">2.2 奈氏准则与香农定理</span>
-                                <span class="post-nav-item">上一篇</span>
-                            </span>
-                        </a>
-                    </div>
-                
-                
-                    <div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
-                        <a class="next"
-                        rel="next"
-                        href="/2023/12/13/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/1-2-%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E4%B8%8E%E5%8F%82%E8%80%83%E6%A8%A1%E5%9E%8B/"
-                        >
-                            <span class="title flex justify-center items-center">
-                                <span class="post-nav-title-item">1.2 体系结构与参考模型</span>
-                                <span class="post-nav-item">下一篇</span>
-                            </span>
-                            <span class="right arrow-icon flex justify-center items-center">
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </span>
-                        </a>
-                    </div>
-                
-            </div>
-        
-
-
-        
-            <div class="comment-container px-2 sm:px-6 md:px-8 pb-8">
-                <div class="comments-container mt-10 w-full ">
-    <div id="comment-anchor" class="w-full h-2.5"></div>
-    <div class="comment-area-title w-full my-1.5 md:my-2.5 text-xl md:text-3xl font-bold">
-        评论
-    </div>
-    
-
-        
-            
-    <div id="waline"></div>
-    <script type="module" data-swup-reload-script>
-      import { init } from '/js/libs/waline.mjs';
-
-      function loadWaline() {
-        init({
-          el: '#waline',
-          serverURL: 'waline-gray-alpha.vercel.app',
-          lang: 'zh-CN',
-          dark: 'body[class~="dark-mode"]',
-          requiredMeta: ['nick', 'mail'],
-          emoji: [],
-          recaptchaV3Key: "wasd",
-          
-        });
-      }
-
-      if (typeof swup !== 'undefined') {
-        loadWaline();
-      } else {
-        window.addEventListener('DOMContentLoaded', loadWaline);
-      }
-    </script>
-
-
-
-        
-    
-</div>
-
-            </div>
-        
-    </div>
-
-    
-        <div class="toc-content-container">
-            <div class="post-toc-wrap">
-    <div class="post-toc">
-        <div class="toc-title">此页目录</div>
-        <div class="page-title">2.1 数据的编码与调制</div>
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E9%80%9A%E4%BF%A1%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="nav-text">数据通信的基本概念</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%BC%96%E7%A0%81%E4%B8%8E%E8%B0%83%E5%88%B6"><span class="nav-text">编码与调制</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%95%B0%E5%AD%97%E6%95%B0%E6%8D%AE%E7%9A%84%E7%BC%96%E7%A0%81%E4%B8%8E%E8%B0%83%E5%88%B6"><span class="nav-text">数字数据的编码与调制</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%B0%E5%AD%97%E6%95%B0%E6%8D%AE%E7%BC%96%E7%A0%81%E4%B8%BA%E6%95%B0%E5%AD%97%E4%BF%A1%E5%8F%B7"><span class="nav-text">数字数据编码为数字信号</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%B0%E5%AD%97%E6%95%B0%E6%8D%AE%E8%B0%83%E5%88%B6%E4%B8%BA%E6%A8%A1%E6%8B%9F%E4%BF%A1%E5%8F%B7"><span class="nav-text">数字数据调制为模拟信号</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A8%A1%E6%8B%9F%E4%BF%A1%E5%8F%B7%E7%9A%84%E7%BC%96%E7%A0%81%E4%B8%8E%E8%B0%83%E5%88%B6"><span class="nav-text">模拟信号的编码与调制</span></a></li></ol></li></ol>
-
-    </div>
-</div>
-        </div>
-    
-</div>
-
-
 
                 
 
@@ -1022,27 +823,6 @@ mjx-container[display="true"] + br {
         </div>
     </div>
 
-    
-        <div class="post-tools">
-            <div class="post-tools-container">
-    <ul class="article-tools-list">
-        <!-- TOC aside toggle -->
-        
-            <li class="right-bottom-tools page-aside-toggle">
-                <i class="fa-regular fa-outdent"></i>
-            </li>
-        
-
-        <!-- go comment -->
-        
-            <li class="go-comment">
-                <i class="fa-regular fa-comments"></i>
-            </li>
-        
-    </ul>
-</div>
-
-        </div>
     
 
     <div class="right-side-tools-container">
